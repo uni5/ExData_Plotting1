@@ -25,7 +25,7 @@ par(mfrow = c(2, 2))
 with(data, {
   plot(data$Date_Time, data$Global_active_power, type="l", xlab = "",  
        ylab = "Global Active Power")
-  plot(data$Date_Time, data$Voltage, type="l", main = "Global Active Power", xlab = "datetime",  
+  plot(data$Date_Time, data$Voltage, type="l", xlab = "datetime",  
        ylab = "Voltage")
   with(data, plot(Date_Time, Sub_metering_1, type="l", col="black", xlab = "", ylab = "Energy sub metering"), lwd = 2)
   with(data, points(Date_Time, Sub_metering_2, type="l", col="red"), lwd = 2)
